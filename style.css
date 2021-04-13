@@ -1,0 +1,283 @@
+/* universal */
+* {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #3f406c;
+  font-family: Poppins, Helvetica, sans-serif;
+}
+
+/* progress dots in navbar */
+.loading .load {
+  top: 8px;
+  left: 11px;
+  position: relative;
+  width: 8px;
+  height: 8px;
+  margin: 0 2px;
+  background-color: #fafefd;
+  border-radius: 50%;
+  display: inline-block;
+  animation-name: dots;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.loading .load:nth-child(2) {
+  background-color: #fafefd;
+  animation-delay: 0.4s;
+}
+
+.loading .load:nth-child(3) {
+  background-color: #fafefd;
+  animation-delay: 0.8s;
+}
+
+/* end of progress */
+
+/* Navigantion bar */
+
+.nav {
+  height: 35px;
+  width: auto;
+  background-color: #52557e;
+}
+
+.bg-color {
+  background-color: #52557e;
+}
+
+/* navbar search */
+.search {
+  display: inline;
+  float: right;
+  background-color: #5a5f89;
+  height: 35px;
+  width: 300px;
+}
+
+.search::placeholder {
+  color: #9195b8;
+  margin-right: 20px;
+  padding-left: 20px;
+  font-size: x-small;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #9195b8;
+  opacity: 1;
+  /* Firefox */
+}
+
+/* search end */
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #9195b8;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #9195b8;
+}
+
+/* button */
+.btn {
+  float: right;
+  width: 35px;
+  height: 35px;
+  background-color: #a88cd9;
+  color: #fafefd;
+}
+
+.bang {
+  position: absolute;
+  color: #d7d9ea;
+  font-size: 13px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-left: 13px;
+  margin-left: 10px;
+}
+
+/* end of nav bar */
+
+/* Grid systems */
+
+.grid-container {
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-gap: 6px;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 0;
+  font-size: 30px;
+}
+
+.item-bg {
+  padding: 95px 0;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+
+.item-bg1 {
+  background-image: url(./img/opp.jpg);
+}
+
+.item-bg2 {
+  background-image: url(./img/pc.png);
+}
+
+.item-bg3 {
+  background-image: url(./img/grp.jpg);
+}
+
+.item-bg5 {
+  background-image: url(./img/camara.jpg);
+}
+
+.item-bg6 {
+  background-image: url(./img/light.png);
+}
+
+.item-bg7 {
+  background-image: url(./img/ddc.jpeg);
+}
+
+.item-bg8 {
+  background-image: url(./img/ddc.jpeg);
+}
+
+.item-bg9 {
+  background-image: url(./img/man.jpg);
+}
+
+.item-bg10 {
+  background-image: url(./img/stat.png);
+}
+
+.item1 {
+  grid-column: 1 / span 2;
+}
+
+.bg-purple {
+  background-color: #5a5f89 !important;
+}
+
+.item10 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.card-des {
+  font-size: 16px;
+  padding: 17px 24px 20px 30px;
+
+  text-align: left;
+  background-color: #5a5f89;
+  color: #fbfcff;
+}
+
+.btn-mp {
+  background-color: #aa8ed9;
+  color: #fbfcff;
+  padding: 9px;
+}
+
+.itm4-loading {
+  padding: 19px 0px 27px 0px;
+}
+
+.itm4-cont {
+  width: 134px;
+  line-height: 37px !important;
+  font-size: 30px;
+}
+
+.dum-cont {
+  font-size: x-small;
+  margin: 8px 0;
+}
+
+.d-flex {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -o-display: flex;
+  -ms-display: flex;
+  display: flex;
+}
+
+.mr-12 {
+  -webkit-margin-right: 12px;
+  -moz-margin-right: 12px;
+  -o-margin-right: 12px;
+  -ms-margin-right: 12px;
+  margin-right: 12px;
+}
+
+.fs-xs {
+  -webkit-font-size: x-small;
+  -moz-font-size: x-small;
+  -o-font-size: x-small;
+  -ms-font-size: x-small;
+  font-size: x-small;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+h2 {
+  font-weight: 600 !important;
+  margin-bottom: 0;
+  line-height: 30px !important;
+}
+
+/* end of grid systems*/
+
+/* media Querry */
+
+@keyframes dots {
+  50% {
+    opacity: 0;
+    transform: (0.7) translateY(10px);
+  }
+}
+
+@media (min-width: 240px) {
+  .grid-container {
+    display: block;
+  }
+
+  .container-main {
+    margin: 0;
+  }
+
+  .margin-item {
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 1060px) {
+  .grid-container {
+    display: grid;
+    margin-bottom: 0;
+  }
+
+  .container-main {
+    margin: 4% 12% 12% 12%;
+  }
+
+  .margin-item {
+    margin-bottom: 0;
+  }
+}
